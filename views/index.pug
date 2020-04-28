@@ -1,0 +1,14 @@
+extends layout
+block content
+  h1 Parse XML using NodeJS
+  p User Information
+  table
+      tr
+        th Firstname
+        th Lastname
+        th Phone
+      each user, index in users
+       tr
+        td #{user['firstname'][0]}
+        td #{user['lastname'][0]}
+        td #{user['phone'][0]}
